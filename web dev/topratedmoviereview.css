@@ -1,0 +1,51 @@
+body{
+    cursor: default;
+    caret-color: transparent;
+}
+.title{
+    text-align: center;
+}
+.title a {
+  text-decoration: none;   
+  color: inherit;          
+}
+
+.title a:hover {
+  color: #8B0000;
+}
+
+h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.head{
+    font-family: 'Arial Black', 'Helvetica Bold', sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+.review{
+    font-family: 'Arial Black', 'Helvetica Bold', sans-serif;
+    font-weight: 500;
+    font-size: 2em;   
+}
+dl{
+    font-size: 12pt;
+    color: #333; 
+    font-family: "Verdana", sans-serif;
+}
+footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #111;
+    }

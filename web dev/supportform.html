@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Support</title>
+    <link rel="stylesheet" href="supportform.css">
+  </head>
+  <body>
+    <h3><a href="mainpage.html">🍿 Movie Review 🍿</a></h3>
+    <h1>📩Contact Us📩</h1>
+    <h3>👇Please tell us what problem you've encountered below👇</h3>
+    <hr>
+  <main>
+    <form id="contact-form">
+      <fieldset>
+      <legend>Support Form</legend>
+      <label>Your Name:</label>
+      <input type=text required>
+
+      <label>Your Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+      </fieldset>
+    </form>
+    <footer>
+        <h3>© 2025 Movie Review Website</h3>
+    </footer>
+    <script>
+      const finishForm = document.getElementById('contact-form');
+      finishForm.addEventListener('submit', function(e) {
+      e.preventDefault(); 
+      alert("✅ Thank you! We have received your message and will email back to you shortly. :)");
+      finishForm.reset();
+      });
+    </script>
+  </main>
+  </body>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Review</title>
+    <link rel="stylesheet" href="formpage.css">
+  </head>
+    
+  <body>
+    <h3><a href="mainpage.html">🍿 Movie Review 🍿</a></h3>
+    <h1>⭐Movie Review Rating Form⭐</h1>
+    <hr>
+    <form onsubmit = "send()" onreset="f2()">
+     <fieldset>
+      <legend>Personal Information</legend>
+      <label>Reviewer Name</label>  
+      <input type=text>    <br><br>
+      <label>Age</label>
+      <input type=number min=16 max=60><br><br>  
+      <label>Gender</label>
+      <input type=radio name=gender> <em>Male</em>  
+      <input type=radio name=gender> <em>Female</em> <br><br>  
+      <label>Movie Title</label> 
+      <input type=text required><em>*</em> <br><br>
+      <label>Email</label>
+      <input type="email" size=40 required>
+     </fieldset> 
+    <br><br>
+        
+    <fieldset>
+     <legend>Movie</legend>   
+     <label>Movie Categories</label>  
+     <select>
+        <option>Action</option>
+        <option>Comedy</option>
+        <option>Horror</option>
+        <option>Romance</option>
+        <option value="other">Other</option>
+        <input type=text>    
+        <!-- For other option and i can type -->
+
+     </select><br><br>
+     <label>Pick Your Ratings</label>   
+     <input type=radio name=rating value=5> 5 Star
+     <input type=radio name=rating value=4> 4 Star
+     <input type=radio name=rating value=3> 3 Star
+     <input type=radio name=rating value=2> 2 Star
+     <input type=radio name=rating value=1> 1 Star
+     <br><br>
+     <label>Movie Review</label> <br><br>
+     <textarea rows=5 cols=60></textarea> <br><br>
+     <br><br>
+     <label>Movie Poster</label>  
+     <input type=file style="width:300px;">       
+    </fieldset>
+    <br><br>
+        
+    <fieldset>
+      <input type=submit value="Submit Review">
+      <input type=reset value="Clear Form">
+    </fieldset>      
+    </form>  
+    <br><br><br>  
+    <footer>
+      <h3>© 2025 Movie Review Website</h3>
+    </footer>
+    <script>
+      function send()
+        {
+            alert("Are you to submit the form?");
+            alert("Form is submited....");
+            window.open("ack.html", "medium", "width=500, height=300");
+        }
+     function f2()
+        {
+            alert("Are you sure to clear all data?");
+        }
+    </script>
+    </body>
+</html>
